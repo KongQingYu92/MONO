@@ -1,0 +1,24 @@
+//
+//  header1.pch
+//  MONO
+//
+//  Created by qianfeng on 16/1/19.
+//  Copyright (c) 2016年 China. All rights reserved.
+//
+
+#ifndef MONO_header1_pch
+#define MONO_header1_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__  //只被0c文件所引用
+#import "RequestUrls.h"
+
+#define SCREEN_W [UIScreen mainScreen].bounds.size.width
+#define SCREEN_H [UIScreen mainScreen].bounds.size.height
+
+#endif
+
+
+
+#endif
