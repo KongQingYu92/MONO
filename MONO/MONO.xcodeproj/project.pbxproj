@@ -49,8 +49,6 @@
 		BCEFE6231C4F4003001F4732 /* ArchitectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEFE6211C4F4003001F4732 /* ArchitectViewController.xib */; };
 		BCEFE6271C4F4012001F4732 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEFE6251C4F4012001F4732 /* MineViewController.m */; };
 		BCEFE6281C4F4012001F4732 /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEFE6261C4F4012001F4732 /* MineViewController.xib */; };
-		BCEFE62D1C4F405E001F4732 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEFE62B1C4F405E001F4732 /* CustomTabBar.m */; };
-		BCEFE62E1C4F405E001F4732 /* CustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCEFE62C1C4F405E001F4732 /* CustomTabBar.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,9 +144,6 @@
 		BCEFE6241C4F4012001F4732 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		BCEFE6251C4F4012001F4732 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		BCEFE6261C4F4012001F4732 /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
-		BCEFE62A1C4F405E001F4732 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
-		BCEFE62B1C4F405E001F4732 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
-		BCEFE62C1C4F405E001F4732 /* CustomTabBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTabBar.xib; sourceTree = "<group>"; };
 		BCEFE62F1C4F40A5001F4732 /* RequestUrls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestUrls.h; sourceTree = "<group>"; };
 		BCEFE6301C4F42B0001F4732 /* header1.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = header1.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -425,9 +420,6 @@
 		BCEFE6291C4F4023001F4732 /* CustomTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				BCEFE62A1C4F405E001F4732 /* CustomTabBar.h */,
-				BCEFE62B1C4F405E001F4732 /* CustomTabBar.m */,
-				BCEFE62C1C4F405E001F4732 /* CustomTabBar.xib */,
 			);
 			name = CustomTabBar;
 			sourceTree = "<group>";
@@ -512,7 +504,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCEFE62E1C4F405E001F4732 /* CustomTabBar.xib in Resources */,
 				BCEFE55F1C4F3BC5001F4732 /* LaunchScreen.xib in Resources */,
 				BCEFE55C1C4F3BC5001F4732 /* Images.xcassets in Resources */,
 				BCEFE61E1C4F3FED001F4732 /* SpecialViewController.xib in Resources */,
@@ -558,7 +549,6 @@
 				BCEFE5D41C4F3D12001F4732 /* JSONHTTPClient.m in Sources */,
 				BCEFE6091C4F3D22001F4732 /* UIView+WebCacheOperation.m in Sources */,
 				BCEFE5D51C4F3D12001F4732 /* JSONModel+networking.m in Sources */,
-				BCEFE62D1C4F405E001F4732 /* CustomTabBar.m in Sources */,
 				BCEFE5FA1C4F3D22001F4732 /* MKAnnotationView+WebCache.m in Sources */,
 				BCEFE60F1C4F3D66001F4732 /* ScanBoxView.m in Sources */,
 				BCEFE6081C4F3D22001F4732 /* UIImageView+WebCache.m in Sources */,
@@ -762,6 +752,7 @@
 				BCEFE5701C4F3BC5001F4732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCEFE5711C4F3BC5001F4732 /* Build configuration list for PBXNativeTarget "MONOTests" */ = {
 			isa = XCConfigurationList;
@@ -770,6 +761,7 @@
 				BCEFE5731C4F3BC5001F4732 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

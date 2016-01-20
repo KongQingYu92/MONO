@@ -7,8 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "RecommendViewController.h"
+#import "SpecialViewController.h"
+#import "ArchitectViewController.h"
+#import "MineViewController.h"
 
 @interface AppDelegate ()
+{
+    RecommendViewController *_recommendController;
+    UINavigationController *_navRecommendController;
+    
+    SpecialViewController *_specialController;
+    UINavigationController *_navSpecialController;
+    
+    ArchitectViewController *_architectController;
+    UINavigationController *_navArchitectController;
+    
+    MineViewController *_mineController;
+    UINavigationController *_navMineController;
+    
+    UITabBarController *_mainTabBarController;
+}
 
 @end
 
@@ -20,6 +39,40 @@
     
     
     return YES;
+}
+- (UIViewController *)createRootViewController
+{
+    _mainTabBarController = [[UITabBarController alloc]init];
+    _mainTabBarController.tabBar.backgroundColor = [UIColor blackColor];
+    
+    //设置推荐页面
+    _recommendController = [[RecommendViewController alloc]init];
+    _navRecommendController = [[UINavigationController alloc]initWithRootViewController:_recommendController];
+    UITabBarItem *recommendItem = [[UITabBarItem alloc]initWithTitle:nil image:nil selectedImage:nil];
+    _navRecommendController.tabBarItem = recommendItem;
+    
+    //专题
+    _specialController = [[SpecialViewController alloc]init];
+    _navSpecialController = [[UINavigationController alloc]initWithRootViewController:_specialController];
+    UITabBarItem *specialItem = [[UITabBarItem alloc]initWithTitle:nil image:nil selectedImage:nil];
+    _navSpecialController.tabBarItem = specialItem;
+    
+    //造物主
+    _architectController = [[ArchitectViewController alloc]init];
+    _navArchitectController = [[UINavigationController alloc]initWithRootViewController:_architectController];
+    UITabBarItem *architectItem = [[UITabBarItem alloc]initWithTitle:nil image:nil selectedImage:nil];
+    _navArchitectController.tabBarItem = architectItem;
+    
+    //我的
+    _mineController = [[MineViewController alloc]init];
+    _navMineController = [[UINavigationController alloc]initWithRootViewController:_mineController];
+    UITabBarItem *mineItem = [[UITabBarItem alloc]initWithTitle:nil image:nil selectedImage:nil];
+    _navMineController.tabBarItem = mineItem;
+    
+    _mainTabBarController.viewControllers = @[_navRecommendController,_navSpecialController,_navArchitectController,_navMineController];
+    
+    
+    return _mainTabBarController ;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
