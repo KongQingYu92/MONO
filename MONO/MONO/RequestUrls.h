@@ -17,7 +17,7 @@
 //http://mmmono.com/item/277517/
 
 //专题主界面
-#define MONO_SPECIAL @"//http://mmmono.com/api/v2/special/special_tab/"
+#define MONO_SPECIAL @"http://mmmono.com/api/v2/special/special_tab/"
 
 //专题界面--二级界面
 //http://mmmono.com/api/v2/special/20025564/content/
